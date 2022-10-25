@@ -38,7 +38,7 @@ function Feed() {
 
   if (!pins?.length) return <h2>No pins avalaible</h2>
   return (
-    <div>
+    <div className='-z-20'>
         {pins && <MisonatyLayout pins={pins}/>}
     </div>
   )
