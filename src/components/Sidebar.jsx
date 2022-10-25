@@ -17,7 +17,7 @@ function Sidebar({user,closeToggle}) {
 
 
   return (
-    <div className='flex-fle-col fustify-betweeen bf-white h-full overflow-y-scrikk min-w-210 hide-scrollbar'>
+    <div className='flex-fle-col fustify-betweeen bf-white h-full overflow-y-scrikk min-w-210 hide-scrollbar z-99'>
       <div className='flex flex-col'>
           <Link to='/'
           className='flex px-6 gap-2 my-6 pt-1 w-190 items-center'
@@ -55,7 +55,7 @@ function Sidebar({user,closeToggle}) {
         <Link
         to={`/user/${user._id}`}
         onClick={handleCloseSidebar}
-        className="flex my-5 mb-3 gap-2 items-center bg-white rounded-lg shadow-lg mx-3 absolute bottom-0 w-auto p-3"
+        className="flex my-5 mb-3 gap-2 items-center bg-white rounded-lg shadow-lg mx-3 "
         >
           <img src={user.image} alt="user-profile" className='w-10 h-10 rounded-full'/>
           <p>
