@@ -16,7 +16,7 @@ const breakpontObj={
 function MisonatyLayout({pins}) {
   return (
     <div>
-        <Masonry className='flex aminate-slide-fwd'
+        <Masonry className='flex aminate-slide-fwd -z-10'
         breakpointCols={breakpontObj}
         >
         {pins?.map((pin)=><Pin key={pin._id} pin={pin} className='w-max'/>)}
